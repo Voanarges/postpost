@@ -1,0 +1,30 @@
+$palette: (
+        primary: (
+                main: var(--color-primary),
+                contrast: var(--color-white),
+        ),
+        white: (
+                main: var(--color-white),
+                contrast: var(--color-black),
+        ),
+        black: (
+                main: var(--color-black),
+                contrast: var(--color-white),
+        ),
+        contrast-low: (
+                main: var(--color-contrast-low),
+                contrast: var(--color-contrast-lower),
+        ),
+        contrast-medium: (
+                main: var(--color-contrast-medium),
+                contrast: var(--color-contrast-higher),
+        ),
+        contrast-high: (
+                main: var(--color-contrast-high),
+                contrast: var(--color-contrast-lower),
+        ),
+        contrast-higher: (
+                main: var(--color-contrast-higher),
+                contrast: var(--color-contrast-lower),
+        ),
+)

@@ -1,0 +1,82 @@
+.sliders{
+    margin: 1em auto 10em auto;
+    width: 75em;
+    height: 41em;
+    
+
+    img{
+        border-radius: 20px;
+        width: var(--space-xxxxl);
+        
+    }
+  
+    &__block{
+        // width: 15em;
+        // width: var(--space-xxxxl);
+        position: relative;
+        
+    }
+    .first:before {
+            content: url('/assets/img/sliders/dubai_g1.svg');
+            position: absolute;
+            display: block;
+            transform: rotate(-2deg);
+            z-index: 15;
+            top: 5em;
+            left: -4em;
+        }
+    .first:after {
+        content: url('/assets/img/sliders/dubai_g2.png');
+        position: absolute;
+        display: block;
+        transform: rotate(-2deg);
+        z-index: 15;
+        top: 13em;
+        left: 4em;
+    }
+    .second:before {
+        content: url('/assets/img/sliders/friyay_1.svg');
+        position: absolute;
+        display: block;
+        transform: rotate(-2deg);
+        z-index: 15;
+        top:12em;
+        left: -4em;
+    }
+    .second:after {
+        content: url('/assets/img/sliders/friyay_2.svg');
+        position: absolute;
+        display: block;
+        transform: rotate(-2deg);
+        z-index: 15;
+        top: 4em;
+        left: 7em;
+    }
+    .third:after{
+        content: url('/assets/img/sliders/repost.png');
+        position: absolute;
+        display: block;
+        z-index: 15;
+        top: 4em;
+        left: -2em;
+
+    }
+    .firth:before {
+        content: url('/assets/img/sliders/frame4_1.png');
+        position: absolute;
+        display: block;
+        transform: rotate(-2deg);
+        z-index: 15;
+        top:9em;
+        left: -4em;
+    }
+    .firth:after {
+        content: url('/assets/img/sliders/frame4_2.png');
+        position: absolute;
+        display: block;
+        transform: rotate(-2deg);
+        z-index: 15;
+        top: 5em;
+        left: 7em;
+    }
+}

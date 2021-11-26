@@ -1,0 +1,85 @@
+.header{
+    &__img-first{
+        img {border-radius: 20px;}
+    }
+    &__img_messages{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        background-color: #0C0C0C;
+        position: absolute;
+        top: 26em;
+        top: 59em;
+        right: 5em;
+    }
+    &__img{
+        
+        position: relative;
+        &::before{
+            content: url('/assets/img/icons/header_circle.svg');
+            position: absolute;
+            display: block;
+            z-index: 10;
+            width: 6.4em;
+            height: 6.4em;
+            top: 10.3em;
+            left: -0.3em;
+        }
+        &::after{
+            content: url('/assets/img/icons/header_vector.svg');
+            position: absolute;
+            display: block;
+            z-index: 10;
+            width: 6.4em;
+            height: 6.4em;
+            top: 8.1em;
+            right: -1em;
+        }
+        
+
+
+
+
+        // &:after{
+        //     content: url('/assets/img/icons/header_star.svg');
+        //     position: absolute;
+        //     display: block;
+        //     z-index: 10;
+        //     width: 103px;
+        //     height: 103px;
+        //     top: 26em;
+        //     left: 71.8em;
+        // }
+        
+        // .direction{
+        //     background-image: url('/assets/img/icons/arrow direction.png');
+        //     width: 1.5em;
+        //     height: 1.5em;
+        //     margin-left: 0.6em;
+        // }
+    }
+    
+    // &__messages {
+    //     width: 4rem;
+    //     height: 4rem;
+    //     border-radius: 50%;
+    //     background-color: #0C0C0C;
+    //     position: absolute;
+    //     top: 26em;
+    //     right: 1em;
+    //     top: 59em;
+    //     right: 5em;
+    //     background-position: 50% 50%;
+    //     i {
+    //         position: relative;
+    //         &:after{
+    //             content: url('/assets/img/icons/masseges.png');
+    //             position: absolute;
+    //             display: block;
+    //             top: 2em;
+    //             right: -3em;
+    //         }
+    //     }
+    // }
+}
+

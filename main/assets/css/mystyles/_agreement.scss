@@ -1,0 +1,31 @@
+.agreement{
+    height: 80em;
+
+    &__img {
+        position: relative;
+        width: 47.4em;
+        height: 29em;
+        object-fit: contain;
+
+        .left_top{
+            position: absolute;
+            top: 1em;
+            left: -11em;
+        }
+        .left_bottom{
+            position: absolute;
+            top: 22em;
+            left: -12em;
+        }
+        .right_top{
+            position: absolute;
+            top: 0em;
+            right: -12em;
+        }
+        .right_bottom{
+            position: absolute;
+            top: 22em;
+            right: -10em;
+        }
+    }
+}

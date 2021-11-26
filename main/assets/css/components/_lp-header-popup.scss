@@ -1,0 +1,26 @@
+.lp-header-popup {
+  position: fixed;
+  z-index: var(--z-index-popover);
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: var(--color-primary);
+
+  &__toggle {
+    text-align: right;
+  }
+
+  &__section {
+    margin: var(--space-lg) 0;
+  }
+}
+
+:root[lp-header-popup-open] {
+  body {
+    overflow: hidden;
+  }
+
+  .lp-header-popup {
+    display: block;
+  }
+}

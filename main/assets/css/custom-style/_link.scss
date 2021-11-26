@@ -1,0 +1,22 @@
+@use 'palette' as *;
+
+:root {
+  --link-color: var(--color-primary);
+}
+
+.link {
+  transition: all 0.2s ease;
+  text-decoration: none;
+  opacity: 1;
+  color: var(--link-color);
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+@each $name, $colors in $palette {
+  .link--#{$name} {
+    --link-color: #{map-get($colors, "main")};
+  }
+}

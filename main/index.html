@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Postmypost</title>
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="lp-header">
+
+  <div class="lp-header__wrapper container max-width-adaptive-lg items-center margin-y-md">
+
+    <div class="lp-header__logo">
+      <a href="/"><img src="./assets/img/icons/logo-postmypost-white.svg" alt="Postmypost" width="170" height="42" class="block"></a>
+    </div>
+
+    <div class="lp-header__menu ">
+      <nav class="lp-header-nav inline-flex gap-lg">
+        <a href="#" class="link link--white">Возможности</a>
+        <a href="#" class="link link--white">Тарифы</a>
+        <a href="#" class="link link--white">Центр помощи</a>
+      </nav>
+    </div>
+
+    <div class="lp-header__actions">
+      <button class="btn btn--outline btn--white">
+        Войти
+      </button>
+      <button class="btn btn--fill btn--white">
+        Зарегистрироваться
+      </button>
+    </div>
+
+    <div class="lp-header__toggle">
+      <button type="button" class="btn btn--flat btn--icon btn--white" onclick="toggleHeaderMenu()">
+        <span class="icon icon--sm">
+          <svg><use xlink:href="#ico-hamburger"></use></svg>
+        </span>
+      </button>
+    </div>
+
+  </div>
+</div>
+
+<!-- HEADER POPUP -->
+<div class="lp-header-popup overflow-auto">
+  <div class="container max-width-adaptive-lg margin-y-md">
+
+    <div class="flex justify-between">
+      <a href="/"><img src="./assets/img/icons/logo-postmypost-white.svg" alt="Postmypost" width="170" height="42" class="block"></a>
+
+      <button type="button" class="btn btn--flat btn--icon btn--white" onclick="toggleHeaderMenu()">
+        <span class="icon icon--sm">
+          <svg><use xlink:href="#ico-x-md"></use></svg>
+        </span>
+      </button>
+    </div>
+
+    <div class="lp-header-popup__section">
+      <div class="inline-flex flex-wrap gap-xxs">
+        <button class="btn btn--outline btn--white">
+          Вход
+        </button>
+        <button class="btn btn--fill btn--white">
+          Регистрация
+        </button>
+      </div>
+    </div>
+
+    <div class="lp-header-popup__section">
+      <h4 class="color-primary-lighter">Тест</h4>
+      <div class="lp-header-popup-nav">
+        <div class="lp-header-popup-nav__item"><a class="link link--white" href="#">О сервисе</a></div>
+        <div class="lp-header-popup-nav__item"><a class="link link--white" href="#">Тарифы</a></div>
+        <div class="lp-header-popup-nav__item"><a class="link link--white" href="#">Обновления сервиса</a></div>
+        <div class="lp-header-popup-nav__item"><a class="link link--white" href="#">Предложить улучшение</a></div>
+        <div class="lp-header-popup-nav__item"><a class="link link--white" href="#">Центр помощи</a></div>
+      </div>
+    </div>
+
+    <div class="lp-header-popup__section">
+      <h4 class="color-primary-lighter">Тест</h4>
+      <div class="lp-header-popup-nav">
+        <div class="lp-header-popup-nav__item"><a class="link link--white" href="#">О сервисе</a></div>
+        <div class="lp-header-popup-nav__item"><a class="link link--white" href="#">Тарифы</a></div>
+        <div class="lp-header-popup-nav__item"><a class="link link--white" href="#">Обновления сервиса</a></div>
+        <div class="lp-header-popup-nav__item"><a class="link link--white" href="#">Предложить улучшение</a></div>
+        <div class="lp-header-popup-nav__item"><a class="link link--white" href="#">Центр помощи</a></div>
+      </div>
+    </div>
+
+    <div class="lp-header-popup__section">
+      <h4 class="color-primary-lighter">Тест</h4>
+      <div class="lp-header-popup-nav">
+        <div class="lp-header-popup-nav__item"><a class="link link--white" href="#">О сервисе</a></div>
+        <div class="lp-header-popup-nav__item"><a class="link link--white" href="#">Тарифы</a></div>
+        <div class="lp-header-popup-nav__item"><a class="link link--white" href="#">Обновления сервиса</a></div>
+        <div class="lp-header-popup-nav__item"><a class="link link--white" href="#">Предложить улучшение</a></div>
+        <div class="lp-header-popup-nav__item"><a class="link link--white" href="#">Центр помощи</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- BLOCK -->
+<div class="lp-block lp-block--first lp-block--full lp-block--primary lp-block--figure lp-block--figure-2 header__img icons">
+
+  <a href="#" class="header__img_messages"><i></i></a>
+  <div class="container max-width-adaptive-lg">
+    <div class="grid gap-lg items-center">
+      <div class="col-5@md">
+
+        <div class="h1">Публикуйте посты, Stories, а еще Reels и Instagram TV</div>
+
+        <div class="lp-media lp-media--md hide@md">
+          <div class="lp-media__source">
+            <img src="./img/" class="block">
+          </div>
+          <div class="lp-media__bg">
+            <img src="img/media-bg-1.svg" class="block">
+          </div>
+        </div>
+
+        <p>on Instagram, Telegram, VKontakte, Facebook, Odnoklassniki, Twitter.</p>
+        <p class="margin-top-md"><a href="#" class="btn btn--fill btn--black">Попробовать бесплатно<i class="direction"></i></a></p>
+
+      </div>
+      <div class="col-7@md hide block@md">
+
+        <div class="lp-media lp-media--xl">
+          <div class="lp-media__source header__img-first">
+            <img src="./assets/img/pictures/header.png" class="block ">
+          </div>
+          <div class="lp-media__bg">
+            <img src="img/media-bg-1.svg" class="block">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BLOCK -->
+<div class="lp-block">
+  <div class="container max-width-adaptive-lg">
+
+    <div class="text-center margin-bottom-lg">
+      <div class="margin-x-auto max-width-adaptive-sm">
+        <div class="h2 text-xxxxl@md text-xxl">Используй все возможности Stories</div>
+        <p class="color-contrast-medium">Все привычные инструменты Instagram для создания и публикации классных историй. Опрос, викторина, голосование и другие инструменты Instagram Stories.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- BLOCK SLIDERS-->
+<div class="sliders grid gap-md">
+  <div class="sliders__block first margin-bottom-xl col-3">
+    <img src="./assets/img/sliders/dubai.png" alt="insta_photo">
+    <p class="sliders__text  text-bold text-left text-space-md line-height-md color-black">Делайте отметки пользователей, добавляйте хештеги и геометки</p>
+    <p class="sliders__text margin-top-sm text-space-y-sm color-black">Возможно добавить несколько отметок пользователей на историю, а так же  хештег и геометку.</p>
+  </div>
+  <div class="sliders__block second margin-top-xl  col-3">
+    <img src="./assets/img/sliders/friyay.png" alt="insta_photo">
+    <p class="sliders__text  text-bold text-left text-space-md line-height-md color-black">Добавляйте
+      стикеры, эмодзи
+      и GIF анимацию</p>
+    <p class="sliders__text margin-top-sm text-space-y-sm color-black">Уникальные надписи, стикеры, эмодзи и GIF анимация для привлечения внимания и неповторимого дизайна.</p>
+  </div>
+  <div class="sliders__block third margin-bottom-xl col-3">
+    <img src="./assets/img/sliders/frame_3.png" alt="insta_photo">
+    <p class="sliders__text  text-bold text-left text-space-md line-height-md color-black">Репост</p>
+    <p class="sliders__text margin-top-sm text-space-y-sm color-black">Делайте репост важных постов и увеличивайте
+      их охват.</p>
+  </div>
+  <div class="sliders__block firth margin-top-xl col-3">
+    <img src="./assets/img/sliders/frame_4.png" alt="insta_photo">
+    <p class="sliders__text  text-bold text-left text-space-md line-height-md color-black">Вопрос, квиз, викторина, вопрос-слайдер</p>
+    <p class="sliders__text margin-top-sm text-space-y-sm color-black">Вовлекайте аудиторию
+      при помощи интерактивных стикеров</p>
+  </div>
+</div>
+
+<!-- planning blog -->
+<div class="lp-block lp-block--primary content flex flex-column justify-start gap-md padding-x-md">
+  <p class="h3 text-xxxxl max-width-adaptive-sm padding-x-sm margin-x-auto">Планируйте посты так, как вам удобно</p>
+  <div class='flex justify-between  content__buttons margin-x-auto'>
+    <div class="text-md underline_btn">Cетка Иснтаграм</div>
+    <div class="text-md">Лента</div>
+    <div class="text-md">Неделя</div>
+    <div class="text-md">Месяц</div>
+    <div class="text-md">Контент план</div>
+  </div>
+  <p class="text-l text-center max-width-adaptive-sm padding-x-md margin-x-auto margin-top-xl">Все комментарии проекта попадают в единый раздел, в который вы можете перейти, чтобы быстро ответить на комментарии сразу во всех социальных сетях.</p>
+  <div class="content__img margin-x-auto">
+    <img src="./assets/img/pictures/figure.png" alt="figures" class=" ">
+  </div>
+</div>
+
+<!-- agreement blog -->
+<div class="agreement margin-x-md flex flex-column justify-start gap-md padding-x-md">
+  <p class="h4 text-xxxxl color-black text-bold text-center max-width-adaptive-sm padding-x-xl margin-x-auto margin-top-xxxl">Согласование и обсуждение постов</p>
+  <p class="text-md text-center line-height-xl font-light max-width-adaptive-lg padding-x-xxxxl margin-x-auto margin-top-md">Вы можете создать в сервисе такие же этапы создания поста что и вашей компании.
+    На каждый этап вы можете дать доступ сотрунику, когда сотрудник выолнит свою часть работы он передаст пост на следующий этап. И так до финального согласовнаия с клиентом.</p>
+    <div class="agreement__img margin-x-auto margin-top-xl">
+      <img src="./assets/img/pictures/agreement_frame.png" alt="agreement_frame">
+      <img class="left_top" src="./assets/img/pictures/left_top.png" alt="girl">
+      <img class="left_bottom" src="./assets/img/pictures/left_bottom.png" alt="girl_2">
+      <img class="right_top" src="./assets/img/pictures/right_top.png" alt="men">
+      <img class="right_bottom" src="./assets/img/pictures/right_bottom.png" alt="girl">
+    </div>
+    
+</div>
+<!-- BLOCK -->
+<!-- <div class="lp-block lp-block--primary">
+  <div class="container max-width-adaptive-lg">
+
+    <div class="text-center margin-bottom-lg">
+      <div class="h1">Планируйте посты так,<br> как вам удобно</div>
+    </div>
+
+    <div class="text-center margin-y-md flex">
+      <div class="margin-x-auto max-width-adaptive-sm">
+
+        <div class=" inline-flex flex-wrap gap-md ">
+          <div><a href="#" class="link link--white border-bottom border-2">Тест</a></div>
+          <div><a href="#" class="link link--white">Тест</a></div>
+        </div>
+
+        <p class="margin-top-md">Все привычные инструменты Instagram для создания и публикации классных историй. Опрос, викторина, голосование и другие инструменты Instagram Stories.</p>
+
+      </div>
+    </div>
+
+    <div class="max-width-adaptive-md margin-x-auto">
+      <div class="lp-media lp-media--xxl">
+        <div class="lp-media__source">
+          <img src="./img/" class="block">
+        </div>
+        <div class="lp-media__bg">
+          <img src="img/media-bg-primary-1.svg" class="block">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+<div class="lp-footer padding-y-lg text-component">
+
+  <div class="padding-y-lg container max-width-adaptive-lg ">
+    <div class="grid gap-md">
+      <div class="col-6@md">
+        <div class="max-width-xxs">
+          <h4>Нам доверяют</h4>
+          <p>Postmypost&nbsp;&mdash; профессиональный сервис позволяющий организовать совместную работу в&nbsp;социальных сетях.</p>
+        </div>
+      </div>
+      <div class="col-6@md">
+        <div class="grid gap-sm">
+          <div class="col-6@md">
+            <div class="text-xxxl"><span style="color: #43D2FF">30</span> 000</div>
+            <div>постов в день</div>
+          </div>
+          <div class="col-6@md">
+            <div class="text-xxxl"><span style="color: #B285FD">45</span> 000</div>
+            <div>подключенных аккаунтов</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="padding-y-lg container max-width-adaptive-lg">
+    <div class="grid">
+      <div class="col-6@md gap-md">
+        <div class="max-width-xxs">
+          <h4><a href="#" class="link link--white">Обновления сервиса</a></h4>
+          <p>
+            <a href="#"
+               class="link link--contrast-low">В сообщениях добавлена возможность тегирования диалогов и добавление отметки «Важно».</a><br>
+            <span class="text-sm link--contrast-higher">14 октября 2021</span>
+          </p>
+        </div>
+      </div>
+      <div class="col-6@md">
+        <p>
+          Мы добавляем новые функции каждую неделю! Если у вас есть предложение по улчешнию, напишите нам об этом или прголосуйте уже за предложенные идеи.
+          <br><a href="#" class="link link--primary">Подробнее</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="padding-y-lg container max-width-adaptive-lg">
+    <div class="grid gap-md">
+      <div class="col-3@md">
+        <h5>Возможности</h5>
+        <div class="lp-footer-nav">
+          <div class="lp-footer-nav__item"><a class="link link--contrast-medium" href="#">Публикации</a></div>
+          <div class="lp-footer-nav__item"><a class="link link--contrast-medium" href="#">Комментарии</a></div>
+          <div class="lp-footer-nav__item"><a class="link link--contrast-medium" href="#">Сообщения</a></div>
+          <div class="lp-footer-nav__item"><a class="link link--contrast-medium" href="#">Аналитика</a></div>
+          <div class="lp-footer-nav__item"><a class="link link--contrast-medium" href="#">Команда</a></div>
+        </div>
+      </div>
+
+      <div class="col-3@md">
+        <h5>Ресурсы</h5>
+        <div class="lp-footer-nav">
+          <div class="lp-footer-nav__item"><a class="link link--contrast-medium" href="#">Программа лояльности</a></div>
+          <div class="lp-footer-nav__item"><a class="link link--contrast-medium" href="#">Бонусная система</a></div>
+          <div class="lp-footer-nav__item"><a class="link link--contrast-medium" href="#">Логотип Postmypost</a></div>
+        </div>
+      </div>
+
+      <div class="col-3@md">
+        <h5>Сервис</h5>
+        <div class="lp-footer-nav">
+          <div class="lp-footer-nav__item"><a class="link link--contrast-medium" href="#">О сервисе</a></div>
+          <div class="lp-footer-nav__item"><a class="link link--contrast-medium" href="#">Тарифы</a></div>
+          <div class="lp-footer-nav__item"><a class="link link--contrast-medium" href="#">Обновления сервиса</a></div>
+          <div class="lp-footer-nav__item"><a class="link link--contrast-medium" href="#">Предложить улучшение</a></div>
+          <div class="lp-footer-nav__item"><a class="link link--contrast-medium" href="#">Центр помощи</a></div>
+        </div>
+      </div>
+
+      <div class="col-3@md">
+        <h5>Документы</h5>
+        <div class="lp-footer-nav">
+          <div class="lp-footer-nav__item">
+            <a class="link link--contrast-medium" href="#">Пользовательское соглашение</a>
+          </div>
+          <div class="lp-footer-nav__item">
+            <a class="link link--contrast-medium" href="#">Политика конфиденциальности</a>
+          </div>
+          <div class="lp-footer-nav__item">
+            <a class="link link--contrast-medium" href="#">Информация о работе с юр.лицами</a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="padding-y-lg container max-width-adaptive-lg">
+    <div class="margin-bottom-md">
+      <div class="grid gap-md">
+        <div class="col-4@md">
+          <div class="inline-flex flex-wrap gap-md">
+            <a href="#" class="link link--contrast-low">Русский</a>
+            <a href="#" class="link link--contrast-medium">English</a>
+            <a href="#" class="link link--contrast-medium">Український</a>
+          </div>
+        </div>
+        <div class="col-4@md">
+          <h5>Техническая поддержка</h5>
+          <p class="color-contrast-medium">Мы&nbsp;всегда рады ответить вам в&nbsp;чате поддержки 7&nbsp;дней в&nbsp;неделю с&nbsp;10:00&nbsp;&mdash; 18:00 по&nbsp;МСК.</>
+        </div>
+        <div class="col-4@md text-right@md">
+          <a href="#" class="btn btn--fill btn--svg btn--contrast-high"><img src="img/app-app-store-ru.svg" width="160"
+                                                                             height="48" alt="App Store"></a>
+          <a href="#" class="btn btn--fill btn--svg btn--contrast-high"><img src="img/app-google-play-ru.svg"
+                                                                             width="160" height="48" alt="Google Play"></a>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="grid gap-md items-center">
+        <div class="col-6@md">
+
+          <p class="text-sm margin-top-md color-contrast-medium">
+            © 2016-2021 Postmypost<br>
+            ИП «Никифоров А.В.»<br>
+            ИНН: 123434234324
+          </p>
+
+        </div>
+        <div class="col-6@md text-right@md">
+
+          <div class="inline-flex flex-wrap gap-md">
+            <a href="#" class="link link--contrast-medium">Facebook</a>
+            <a href="#" class="link link--contrast-medium">Instagram</a>
+            <a href="#" class="link link--contrast-medium">ВКонтакте</a>
+            <a href="#" class="link link--contrast-medium">Telegram</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>

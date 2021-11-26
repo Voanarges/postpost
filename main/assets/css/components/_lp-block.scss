@@ -1,0 +1,73 @@
+@use '../base' as *;
+
+$colors: 'green', 'pink', 'primary', 'purple', 'red', 'yellow';
+$figures: 1, 2, 3, 4, 5, 6;
+
+.lp-block {
+  line-height: calc(var(--body-line-height) * var(--line-height-multiplier, 1));
+
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
+  color: var(--color);
+  background-color: var(--background-color);
+
+  --color: var(--color-contrast-high);
+  --background-color: var(--color-white);
+  --line-height-multiplier: 1;
+  --text-space-y-multiplier: 1;
+  --text-unit: 1em;
+  --heading-color: var(--color-contrast-higher);
+  --space-unit: 1em;
+  --padding-top: var(--space-xxl);
+  --padding-bottom: var(--space-xxl);
+
+  .h1, .h2, .h3, .h4,
+  h1, h2, h3, h4 {
+    margin-bottom: calc(var(--space-unit) * 0.3125 * var(--text-space-y-multiplier, 1));
+    color: var(--heading-color);
+  }
+
+  &--first {
+    --padding-top: calc(var(--space-xxl) + 2em);
+  }
+
+  &--full {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+  }
+
+  &--figure {
+    > *:first-child {
+      position: relative;
+    }
+
+    &:before {
+      position: absolute;
+      width: 100%;
+      height: 120%;
+      content: "";
+      text-align: center;
+      pointer-events: none;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+    }
+  }
+
+  @each $color in $colors {
+    &--#{$color} {
+      --background-color: var(--color-#{$color});
+      --color: var(--color-white);
+      --heading-color: var(--color-white);
+    }
+  }
+
+  // @each $i in $figures {
+  //   &--figure-#{$i}:before {
+  //     background-image: url(/img/block-bg-figures-#{$i}.svg);
+  //   }
+  // }
+}
